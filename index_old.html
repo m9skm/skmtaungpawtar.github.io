@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M9-SKM</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Center align text */
+        .center-text {
+            text-align: center;
+            font-family: 'Segoe UI';
+        }
+
+        /* Give Viber icon some space */
+        .viber-icon,
+        .telegram-icon {
+            margin-top: 20px;
+        }
+
+        body {
+            margin-top: 50px;
+            background-color: aliceblue;
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        /* Add space between icons */
+        .icons-container a {
+            margin-right: 20px;
+            /* Adjust the space between icons */
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            font-family: 'CustomFont', sans-serif;
+            font-size: 18px;
+            /* max-width: 100%;
+            text-align: center; */
+        }
+
+        @font-face {
+            font-family: 'CustomFont';
+            src: url(font/pyidaungsu.ttf) format('truetype');
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 480px) {
+            .text {
+                font-size: 16px;
+            }
+
+            .button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-text">
+                    <h2>Welcome to M9-SKM!</h2>
+                    <br/>
+                    <h5>Message me &nbsp;</h5>
+                    <!-- Viber Icon -->
+                    <!-- <div class="card">
+                        <div class="text">
+                            M9 ရှမ်းကိုးမီးကစားရန် <br>
+                            Viber နှင့် Telegram <br>
+                            တို့မှ
+                            အကောင့်ဖွင့်ပါ။
+                        </div>
+                    </div> -->
+                    <div class="icons-container">
+                        <a class="viber-icon" href="viber://chat?number=959254371941&draft=$ဂိမ်းကစားမယ်" target="_blank">
+                            <img src="images/viber.png" alt="Viber Icon" width="80">
+                        </a>
+                        <!-- Telegram Icon -->
+                        <a class="telegram-icon" href="https://t.me/m9skmproagent" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+                                alt="Telegram Icon" width="80">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function openViber() {
+            // Replace '123456789' with the specific Viber phone number or link
+            window.location.href =  'viber://chat?number=959254371941&text=ဂိမ်းကစားမယ်';
+        }
+
+        function openTelegram() {
+            // Replace 'your_telegram_username' with the specific Telegram username or link
+            window.location.href = 'https://t.me/m9skmproagent';
+        }
+    </script>
+</body>
+
+</html>
